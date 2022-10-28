@@ -7,12 +7,12 @@
 
 
 .main-container {
-    border: 3px solid red;
-
+    /* border: 3px solid red; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: yellow;
+    /* background-image: url(ph.jpg); */
 }
 
 .min-container {
@@ -33,12 +33,13 @@
 
 .nav-bar
  {
-    /* border: 3px solid green; */
+    border-bottom: 2px solid black;
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
  }
+ 
  nav ul li {
     /* border: 2px solid black; */
     display: inline-block;
@@ -48,10 +49,14 @@
  nav ul li .nav-element {
     text-decoration: none;
     color: black;
- }
- .nav-text {
-    border: 2px solid greenyellow;
     
+ }
+ .fa-bars {
+    display: none;
+ }
+
+ .nav-text {
+    margin-left: 40px;
  }
  .text1 {
     text-align: justify;
@@ -111,11 +116,12 @@
     font-size: larger;
     font-weight: 500;
     cursor: pointer;
+    border: 2px solid;
 }
 .btn2 {
     /* width: 300px; */
     /* height: 50px; */
-    border: 2px solid red;
+    border: 2px solid;
     padding: 12px 50px;
     font-size: larger;
     font-weight: 500;
@@ -130,7 +136,7 @@
 }
 
 .footer {
-    /* border: 3px solid blue; */
+    border-top: 1px solid;
     flex: 0.5;
     display: flex;
     justify-content: center;
@@ -192,13 +198,13 @@
 
 
 
-
+/* ABOUT STYLE  */
 
 
 
 .about-content {
     
-        border: 3px solid black;
+        /* border: 3px solid black; */
         flex: 3;
         display: flex;
         /* flex-direction: column; */
@@ -206,14 +212,14 @@
 
 
 .my-picture-div {
-    border: 2px solid royalblue;
+    /* border: 2px solid royalblue; */
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
  }
  .about-content-item {
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
     flex: 3;
     display: flex;
     justify-content: flex-start;
@@ -239,6 +245,53 @@
 
 
 
+ 
+
+
+
+
+/* CONTACT STYLE */
+.contact-content {
+    border: 3px solid red;
+    flex: 3;
+    display: flex;
+    
+}
+.contact-form {
+    border: 2px solid palegreen;
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-text {
+    border: 2px solid gray;
+    flex: 1;
+    background-color: white;
+}
+.form-message {
+    font-size: xx-large;
+    color: grey ;
+}
+
+.input-element {
+    width: 100%;
+    height: 50px;
+}
+.input-text-area {
+    height: 100px;
+}
+.submit-btn {
+    background-color: blue;
+    border: 1px solid lightblue;
+    padding: 10px 50px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
 
 
 
@@ -260,6 +313,160 @@
 
 
 @media screen and (max-width: 480px) {
+    .nav-bar {
+        border-bottom: 1px solid black;
+        /* display: flex; */
+        justify-content: space-between;
+
+    }
+    .fa {
+        /* margin-right: -190px; */
+        display: inline-block;
+    }
+    .nav-text {
+        margin-left: 10px;
+        border: 2px solid royalblue;
+        
+    }
+    
+    
+
+    
+
+
+    nav ul li .nav-element {
+        display: none;
+
+    }
+
+    .left-content-area, .right-content-area {
+        display: none;
+    }
+    .main-content-area {
+        flex-direction: column;
+    }
+    .bold-text {
+        font-size: 40px;
+        text-align: left;
+    }
+    .small-text {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    .text1 {
+        font-size: medium;
+    }
+    .text2 {
+        font-size: small;
+        text-align: center  ;
+    }
+    .footer-text {
+        font-size: small;
+    }
+    .main-container {
+        margin: 0px 0px;
+        border: 3px solid red;
+    }
+    .btn-container {
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+
+    }
+    .btn1 {
+        /* padding: 0px 5px; */
+        border: 2px solid black;
+    }
+    .btn2 {
+        /* padding: 5px 0px; */
+        border: 2px solid black;
+    }
+    .min-container, .footer {
+        margin: 5px 20px;
+        /* border: 3px solid blue; */
+    }
+
+    .bold-text-container {
+        /* border: 2px solid red; */
+        margin: 50px 0px;
+    }
+    .nav-bar {
+        margin-top: 20px;
+    }
+    .footer-container {
+        border: 3px solid black;
+    }
+    .footer {
+        margin-top: 20px;
+        /* border: 2px solid gray; */
+        border-top: 1px solid black;
+    }
+
+    
+
+
+
+
+    /* ABOUT MEDIA QUIARY */
+    .nav-bar {
+        flex: 0.5;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .my-picture-div {
+        justify-content: center;
+        /* border: 2px solid black; */
+        flex: 0.5;
+    }
+    .my-picture {
+        height: 200px;
+    }
+    .about-content-item {
+        flex: 1.5;
+    }
+    .about-element {
+        color: coral;
+        font-size: small;
+        font-style: italic;
+        font-weight: bolder;
+        /* margin-top: -60px; */
+    }
+    
+    .about-main-element2 {
+        /* border: 1px solid black; */
+        margin-top: -20px;
+    }
+    .about-main-element3 {
+        /* border: 1px solid black; */
+        margin-top: -20px;
+    }
+    .about-main-element4 {
+        /* border: 1px solid black; */
+        margin-top: -20px;
+    }
+    .about-content-item {
+        /* border: 2px solid black; */
+        margin-top: -20px;
+        margin-left: 0px;
+        flex: 0.5;
+        justify-content: center;
+        
+    }
+    .about-element {
+        text-align: justify;
+    }
+
+
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
     
 
     nav ul li .nav-element {
@@ -299,6 +506,8 @@
         height: fit-content;
         display: flex;
         justify-content: space-between;
+        margin-top: 100px;
+
     }
     .btn1 {
         padding: 5px 30px;
@@ -307,16 +516,13 @@
         padding: 5px 25px;
     }
     .min-container, .footer {
-        /* margin: 5px 20px; */
-        border: 3px solid blue;
+        margin: 5px 20px;
+        /* border: 3px solid blue; */
     }
 
     .bold-text-container {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin: 50px 0px;
-    }
-    .btn-container {
-        margin-top: 100px;
     }
     .nav-bar {
         margin-top: 20px;
@@ -324,9 +530,59 @@
     .footer {
         margin-top: 20px;
     }
-    .min-container {
-        border: 3px solid blue;
+   
+    
+     /* ABOUT MEDIA QUIARY */
+     .nav-bar {
+        flex: 0.5;
     }
+    .about-content {
+        flex-direction: column;
+    }
+    .my-picture-div {
+        justify-content: center;
+        /* border: 2px solid black; */
+        flex: 0.5;
+    }
+    .my-picture {
+        height: 200px;
+    }
+    .about-content-item {
+        flex: 1.5;
+    }
+    .about-element {
+        color: coral;
+        font-size: small;
+        font-style: italic;
+        font-weight: bolder;
+        /* margin-top: -60px; */
+    }
+    
+    .about-main-element2 {
+        /* border: 1px solid black; */
+        margin-top: -20px;
+    }
+    .about-main-element3 {
+        /* border: 1px solid black; */
+        margin-top: -20px;
+    }
+    .about-main-element4 {
+        /* border: 1px solid black; */
+        margin-top: -20px;
+    }
+    .about-content-item {
+        /* border: 2px solid black; */
+        margin-top: -20px;
+        margin-left: 0px;
+        flex: 0.5;
+        justify-content: center;
+        
+    }
+    .about-element {
+        text-align: justify;
+    }
+
+
     
 }
 
