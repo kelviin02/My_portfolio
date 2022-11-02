@@ -13,7 +13,7 @@ html{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: red;
     position: relative;
     /* background-image: url(ph.jpg); */
 }
