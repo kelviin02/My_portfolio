@@ -406,7 +406,7 @@ progress {
 /* PROJECT STYLE */
 
 .project-content-container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     /* border: 5px solid red; */
         /* background-color: white; */
         flex: 3;
@@ -449,7 +449,7 @@ progress {
 
 /* CONTACT STYLE */
 .contact-content-container {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     margin-bottom: 300px;
     /* border: 5px solid cyan; */
     min-height: 100vh;
@@ -845,11 +845,14 @@ form {
     
 
     /* CONTACT MEDIA QUERY */
+    .contact-content-container{
+        border: 3px solid red;
+    }
     .contact-form-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 2px solid ;
+        /* border: 2px solid red; */
     }
     marquee {
         font-size: xx-large;
@@ -871,6 +874,7 @@ form {
         /* margin-bottom: 100px; */
         border-radius: 10px;
     }
+    
 }
 
 
