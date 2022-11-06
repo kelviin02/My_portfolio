@@ -314,7 +314,7 @@ html{
     justify-content: center;
 }
 .my-skill-meter-div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     flex: 2;
     display: flex;
     
@@ -357,6 +357,8 @@ html{
 progress {
     width: 250px;
     height: 25px;
+    /* color: blue; */
+    /* border: 2px solid black; */
     /* color: coral; */
 }
 
@@ -457,7 +459,7 @@ progress {
     flex-direction: column;
 }
 .contact-form-content {
-    border: 2px solid black;
+    border: 2x solid black;
     /* box-shadow: 5px 5px 20px white; */
     /* border-radius: 10px; */
     height: 70vh;
@@ -491,6 +493,7 @@ textarea{
     /* background: transparent; */
     font-size: 15px;
     outline: 0;
+    border: 1px solid black;
     /* margin-bottom: 35px; */
 }
 label{
@@ -834,9 +837,9 @@ form {
         color: black;
     }
     progress{
-        color: black;
+        /* color: green; */
         width: 50%;
-        border: 2px solid;
+        border: 2px solid black;
     }
 
     
@@ -846,6 +849,7 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border: 2px solid ;
     }
     marquee {
         font-size: xx-large;
@@ -864,6 +868,7 @@ form {
         padding: 10px 20px;
         /* cursor: pointer; */
         margin-bottom: 100px;
+        border-radius: 10px;
     }
 }
 
