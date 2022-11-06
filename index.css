@@ -853,6 +853,7 @@ form {
     }
     marquee {
         font-size: xx-large;
+        /* margin-top: 100px; */
     }
     .marquee-class{
         margin-bottom: 20px;
@@ -867,7 +868,7 @@ form {
         /* font-weight: bold; */
         padding: 10px 20px;
         /* cursor: pointer; */
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         border-radius: 10px;
     }
 }
