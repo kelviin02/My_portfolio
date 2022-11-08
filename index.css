@@ -36,6 +36,14 @@ html{
 .left-content-area {
     /* border: 3px dotted orange; */
     flex: 0.5;
+    display: flex;
+    flex-direction: column;
+}
+.left-space-content{
+    background-color: white;
+    border-bottom: 2px solid black;
+    height: 15vh;
+    max-height: 15vh;
 }
 .main-content-area {
     /* border: 3px dotted dodgerblue; */
@@ -57,11 +65,14 @@ html{
     top: 0;
     left: 0;
     z-index: 10;
-    /* background-color: brown; */
+    /* margin-right: 50px; */
+    /* background: transparent; */
+    background-color: white;
  }
  
  nav ul li {
     /* border: 2px solid black; */
+    margin-right: 20px;
     display: inline-block;
     list-style: none;
     margin-left: 20px;
@@ -134,7 +145,7 @@ html{
     transition: 0.5s;
 }
 .bold-text:hover {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px black;
     color: transparent;
 }
 
@@ -160,7 +171,16 @@ html{
     margin-top: 60px;
     flex: 3;
  }
- .btn1 {
+ .btn1,
+ .btn2{
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 15px 85px;
+    font-size: larger;
+    font-weight: 500;
+ }
+ /* .btn1 {
     width: 300px;
     height: 50px;
     font-size: larger;
@@ -176,21 +196,22 @@ html{
     font-weight: 500;
     cursor: pointer;
 
-}
-.btn-anchor{
-    text-decoration: none;
-    color: black;
-    /* width: 50px; */
-    /* background-color: brown; */
-    /* padding-right: 50px; */
-    /* height: 10px; */
-    /* width: 10px; */
-}
+} */
+
 
 
 .right-content-area {
     /* border: 3px solid black; */
     flex: 0.2;
+    display: flex;
+    flex-direction: column;
+}
+.right-space-content{
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
+    max-height: 15vh;
+    height: 15vh;
+    background-color: white;
 }
 
 .footer {
@@ -639,7 +660,20 @@ textarea:valid~label {
         margin-top: 100px;
 
     }
-    .btn1 {
+    .btn1,
+ .btn2{
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    /* font-weight: 500; */
+ }
+    /* .btn1 {
         width: 120px;
         border-radius: 15px;
         font-size: small;
@@ -654,7 +688,7 @@ textarea:valid~label {
         text-align: start;
         font-weight: bolder;
         border: 2px solid black;
-    }
+    } */
     .min-container, .footer {
         margin: 5px 20px;
         font-size: small;
