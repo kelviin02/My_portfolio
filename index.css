@@ -388,6 +388,9 @@ html{
     color: blue;
     font-weight: bolder;
 }
+.li-space{
+    margin-left: 15px;
+}
 
 progress {
     width: 250px;
