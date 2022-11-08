@@ -10,8 +10,8 @@ var options = {
 
 
 //NAV-BARS
-  const navBar = document.querySelector(".fa-bars")
-  const newNav = document.addEventListener("click", toggleIcon)
+  const navBar = document.querySelector("#faa-bar")
+  navBar.addEventListener("click", toggleIcon)
 
   function toggleIcon(){
       navBar.classList.toggle("fa-bars")
