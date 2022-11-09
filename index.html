@@ -143,23 +143,23 @@
                             <div class="contact-form-content">
 
                                 
-                                <form action="">
+                                <form onsubmit="sendEmail(); reset(); return false;">
                                     <marquee behavior="" direction="right" class="marquee-class">Send me a message</marquee>
                                     <div class="row">
                                         <div class="input-group">
-                                            <input type="text" name="name" required>
+                                            <input type="text" name="name" class="name" required>
                                             <label for="name"><i class="fa fa-user fa-form-icons" aria-hidden="true" ></i>Your name</label>
                                         </div>
                                         <div class="input-group">
-                                            <input type="text" name="phone-number" required>
+                                            <input type="text" name="phone-number" class="phone-number" required>
                                             <label for="phone-number"><i class="fa fa-phone-square fa-form-icons" aria-hidden="true"></i>Phone</label>
                                         </div>
                                     </div>
                                     <div class="input-group">
-                                        <input type="email" name="email" required id="email">
+                                        <input type="email" name="email" required id="email" class="email">
                                         <label for="email"><i class="fa fa-envelope fa-form-icons" aria-hidden="true"></i>Email</label>
                                     </div>
-                                    <div class="input-group textarea-div" >
+                                    <div class="input-group textarea-div" id="message" >
                                         <textarea name="" id=""  rows="11" required></textarea>
                                         <label for="message" class="message-lebel"><i class="fa fa-comment fa-form-icons" aria-hidden="true"></i>Message</label>
                                     </div>
@@ -184,50 +184,6 @@
         
     </div>
     
-    <!-- <script src="index.js"></script> -->
-
-     <!-- <script>
-        const navBar = document.querySelector(".fa-bars")
-        const newNav = document.addEventListener("click", toggleIcon)
-
-        function toggleIcon(){
-            navBar.classList.toggle("fa-bars")
-            navBar.classList.toggle("fa-times")
-        }
-
-    </script>  -->
-
-    
-    <!-- <script>
-        const topIcon = document.querySelector('.to-top')
-        window.addEventListener('scroll', showIcon)
-
-        topIcon.addEventListener('click', toTop)
-
-        function showIcon() {
-            if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
-                topIcon.style.display = "block"
-            } else {
-                topIcon.style.display = "none"
-            }
-        }
-
-        function toTop() {
-            document.documentElement.scrollTop = 0
-        }
-    </script> -->
-<!-- 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    var typed = new Typed(".auto-type", {
-        Strings: ["Developer","Freelancer","Designer"] ,
-        typeSpeed: 150,
-        backSpeed: 150,
-        loop: true
-
-    } )
-</script> -->
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -245,10 +201,13 @@ var typed = new Typed('#auto-type', options);
 </script> -->
 
 
+<!-- WORKING CONTACT FORM -->
+<script src="http://smtpjs.com/v3/smtp.js"></script>
 
-
-
+<!-- MAIN JS SOURCE -->
 <script src="index.js"></script>
+
+
 
 </body>
 </html>

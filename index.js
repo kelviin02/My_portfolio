@@ -36,3 +36,21 @@ var options = {
         function toTop() {
             document.documentElement.scrollTop = 0
         }
+
+        //WORKING COONTACT FORM
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "opeoluwakelvin67@gmail.com",
+                Password : "dasilverjnr",
+                To : "lanrekelipher67@gmail.com",
+                From : document.querySelector(".email").value,
+                Subject : "THIS IS THE SUBJECT",
+                Body : "Name" + document.querySelector(".name").value
+                + "<br> Email: " + document.querySelector(".email").value
+                + "<br> Phone-number: " + document.querySelector(".phone-number").value
+                + "<br> Message: " + document.querySelector("#message").value
+            }).then(
+              message => alert("Message sent succesfully.")
+            )
+        }
