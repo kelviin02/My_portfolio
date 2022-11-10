@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>MY FULL PORTIFOLIO</title>
+    <title>My_portfolio</title>
+    
+<!-- <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("xoc1DZunnCSdlflwQ");
+})();
+</script> -->
+
 </head>
 <style>
      .to-top {
@@ -143,7 +153,7 @@
                             <div class="contact-form-content">
 
                                 
-                                <form onsubmit="sendEmail(); reset(); return false;">
+                                <form class="contact-main-form">
                                     <marquee behavior="" direction="right" class="marquee-class">Send me a message</marquee>
                                     <div class="row">
                                         <div class="input-group">
@@ -159,8 +169,8 @@
                                         <input type="email" name="email" required id="email" class="email">
                                         <label for="email"><i class="fa fa-envelope fa-form-icons" aria-hidden="true"></i>Email</label>
                                     </div>
-                                    <div class="input-group textarea-div" id="message" >
-                                        <textarea name="" id=""  rows="11" required></textarea>
+                                    <div class="input-group textarea-div"  >
+                                        <textarea name="" id=""  rows="11" required class="message"></textarea>
                                         <label for="message" class="message-lebel"><i class="fa fa-comment fa-form-icons" aria-hidden="true"></i>Message</label>
                                     </div>
                                     <div class="form-btns">
@@ -185,29 +195,34 @@
     </div>
     
 
-
+<!-- MOVING TEXT -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<!-- <script>
-    var options = {
-  strings: ['<i>Developer</i> .', 'Freelancer.',"Designer."],
-  typeSpeed: 50,
-  backSpeed: 50,
-  loop: true
-};
 
-var typed = new Typed('#auto-type', options);
-
-</script> -->
 
 
 <!-- WORKING CONTACT FORM -->
-<script src="http://smtpjs.com/v3/smtp.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("x9bCZq90M4QsxHGKa");
+   })();
+</script> -->
+
+
 
 <!-- MAIN JS SOURCE -->
 <script src="index.js"></script>
 
 
+<!-- // const form = document.querySelector(".contact-main-form") -->
+<!-- // const name = document.querySelector(".name") -->
+<!-- // const phone = document.querySelector(".phone-number") -->
+<!-- // const email = document.querySelector(".email") -->
+<!-- // const msg = document.querySelector(".message") -->
 
 </body>
 </html>

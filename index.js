@@ -38,19 +38,95 @@ var options = {
         }
 
         //WORKING COONTACT FORM
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "opeoluwakelvin67@gmail.com",
-                Password : "dasilverjnr",
-                To : "lanrekelipher67@gmail.com",
-                From : document.querySelector(".email").value,
-                Subject : "THIS IS THE SUBJECT",
-                Body : "Name" + document.querySelector(".name").value
-                + "<br> Email: " + document.querySelector(".email").value
-                + "<br> Phone-number: " + document.querySelector(".phone-number").value
-                + "<br> Message: " + document.querySelector("#message").value
-            }).then(
-              message => alert("Message sent succesfully.")
-            )
-        }
+        // function sendEmail(){
+        //     Email.send({
+        //         Host : "smtp.elasticemail.com",
+        //         Username : "lanrekelipher67@gmail.com",
+        //         Password : "AC05DDFD265CF6F64130488DE652D54C4AB3",
+        //         To : "opeoluwakelvin@gmail.com",
+        //         From : document.querySelector(".email").value,
+        //         Subject : "THIS IS THE SUBJECT",
+        //         Body : "Name" + document.querySelector(".name").value
+        //         + "<br> Email: " + document.querySelector(".email").value
+        //         + "<br> Phone-number: " + document.querySelector(".phone-number").value
+        //         + "<br> Message: " + document.querySelector(".message").value
+        //     }).then(
+        //       message => alert("Message sent succesfully.")
+        //     )
+        // }
+
+
+
+        // const form = document.querySelector(".contact-main-form")
+        // const name = document.querySelector(".name")
+        // const phone = document.querySelector(".phone-number")
+        // const email = document.querySelector(".email")
+        // const msg = document.querySelector(".message")
+
+
+
+        // function sendMsg(e){
+        //     Email.send({
+        //         SecureToken : "0eaaa3c8-01d4-46fb-b9ad-43fd1268451e",
+        //         To : 'opeoluwakelvin67@gmail.com',
+        //         From : email.value,
+        //         Subject : "This is the subject",
+        //         Body : "Name:" + name.value
+        //         + "<br> Email: " + email.value
+        //         + "<br> Phone-number: " + phone.value
+        //         + "<br> Message: " + msg.value
+        //     }).then(
+        //       message => alert("message sent successfully")
+        //     );
+    
+        // }
+        // form.addEventListener("submit", sendMsg)
+//WORKING CONTACT FORM
+// function sendMail(){
+//     var params = {
+//     name: document.querySelector(".name").value,
+//     phone: document.querySelector(".phone-number").value,
+//     email: document.querySelector(".email").value,  
+//     message: document.querySelector(".message").value,
+//     }
+    
+//     let serviceID = service_tj7qyvq
+//     let templateID = template_8361iul
+
+
+//     emailjs
+//     .send(serviceID,templateID,params)
+//     .then((res) =>{
+//         document.querySelector(".name").value = ""
+//         document.querySelector(".phone-number").value = ""
+//         document.querySelector(".email").value = ""
+//         document.querySelector(".message").value = ""
+//         console.log(res)
+//         alert("FUCK U")
+//     })
+//     .catch((err) => console.log(err))
+// }
+
+// WORKING CONTACT
+const form = document.querySelector(".contact-main-form")
+function sendMsg(e) {
+  e.preventDefault()
+ 
+   name = document.querySelector(".name")
+   phone = document.querySelector(".phone-number")
+   email = document.querySelector(".email")
+   msg = document.querySelector(".message")
+
+   //email for form function
+    Email.send({
+     SecureToken : "7867fab-9130-4c5d-97d8-c8c5b01fe036",
+     To : 'lanrekelipher67@gmail.com',
+     From : email.value,
+     Subject : "CONTACT FORM",
+     Body : "msg.value"
+    }).then(
+  message => alert("FUCK YOU")
+);
+
+}
+form.addEventListener("submit", sendMsg)
