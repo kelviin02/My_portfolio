@@ -10,19 +10,18 @@ var options = {
 
 
 //NAV-BARS
-    const navBar = document.querySelector("#faa-bar")
-    const nav = document.querySelector("nav")
-    // const icon = document.querySelector(".fa")
-    const navElement = document.querySelectorAll(".nav-elment")
+  //   const navBar = document.querySelector("#faa-bar")
+  //   const nav = document.querySelector("nav")
+  //   const navElement = document.querySelectorAll(".nav-elment")
 
-    navBar.addEventListener("click", toggleIcon)
-    navElement.forEach((navElement) => navElement.addEventListener("click", toggleIcon))
+  //   navBar.addEventListener("click", toggleIcon)
+  //   navElement.forEach((navElement) => navElement.addEventListener("click", toggleIcon))
 
-    function toggleIcon(){
-      navBar.classList.toggle("fa-bars")
-      navBar.classList.toggle("fa-times")
-      nav.classList.toggle("show")
-  }
+  //   function toggleIcon(){
+  //     navBar.classList.toggle("fa-bars")
+  //     navBar.classList.toggle("fa-times")
+  //     nav.classList.toggle("show")
+  // }
 
 
 //BACK TO-TOP ARROW  
