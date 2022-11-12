@@ -602,28 +602,13 @@ textarea:valid~label {
 
 
 
-@media screen and (max-width: 480px) {
 
-    .nav-bar{
-        border: 3px solid red;
-        margin-top: 20px;
-        justify-content: space-between;
+@media screen and (max-width: 480px){
 
+
+    #faa-bars{
+        display: block;
     }
-    #faa-bar{
-        display: flex;
-        /* margin-right: 50px; */
-        /* margin-right: 100px; */
-
-    }
-    
-
-/* yooooooooooooooooooooooo */
-    /* nav ul li .nav-element {
-        display: none;
-
-    } */
-
     .left-content-area,
     .right-content-area{
         display: none;
@@ -638,6 +623,9 @@ textarea:valid~label {
     .small-text {
         flex-direction: column;
         font-size: 20px;
+    }
+    .nav-text{
+        margin: 0px;
     }
     
     .text1 {
@@ -664,7 +652,7 @@ textarea:valid~label {
 
     }
     .btn1,
- .btn2{
+    .btn2{
     color: white;
     text-decoration: none;
     border: 2px solid black;
@@ -714,13 +702,17 @@ textarea:valid~label {
         border-top: 1px solid black;
     }
 
-    
 
 
 
 
-    /* ABOUT MEDIA QUIARY */
-    .about-content-container {
+
+
+
+
+
+     /* ABOUT MEDIA QUIARY */
+     .about-content-container {
         border: 2px solid red;
         flex-direction: column;
     }
@@ -810,7 +802,14 @@ textarea:valid~label {
     }
 
 
-    
+
+
+
+
+
+
+
+
 
     /* CONTACT MEDIA QUERY */
     .contact-content-container{
@@ -847,8 +846,16 @@ textarea:valid~label {
         /* margin-bottom: 100px; */
         border-radius: 10px;
     }
+
+
+
     
+
+
+
+
 }
+
 
 
 
