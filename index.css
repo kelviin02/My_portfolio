@@ -70,19 +70,25 @@ html{
     background-color: white;
  }
  
- nav ul li {
+ nav, .nav-ul, .nav-li {
     /* border: 2px solid black; */
-    margin-right: 20px;
+    /* border-bottom: 2px solid; */
+    /* margin-right: 20px; */
     display: inline-block;
     list-style: none;
-    margin-left: 20px;
+    margin-left:  20px;
+    /* padding-left: 20px; */
+    padding: 0px 20px;
  }
- nav ul li .nav-element {
+ .nav-li{
+    border-bottom: 2px solid red;
+ }
+ nav, .nav-ul, .nav-li .nav-element {
     text-decoration: none;
     color: black;
     
  }
-.barclass {
+#faa-bar {
     color: blue;
     display: none;
 }
@@ -595,32 +601,74 @@ textarea:valid~label {
 
 
 @media screen and (max-width: 480px) {
-    .nav-bar {
-        border-bottom: 1px solid black;
-        /* display: flex; */
-        justify-content: space-between;
-
+    /* #faa-bar{
+        display: flex;
+        margin-right: 50px;
+    }    
+    .nav-bar{
+        display: flex;      
+        align-items: center;
     }
-    .barclass {
-        /* margin-right: -190px; */
+    .nav-ul, .nav-li{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-li{
         display: block;
-        margin-left: 100px;
     }
-    .nav-text {
-        margin-left: 10px;
-        /* border: 2px solid royalblue; */
+    nav{
+        border: 2px solid green;
         
-    }
+    } */
+    
+.nav-li {
+    display: block;
+}
+.nav-li, 
+.nav-element {
+    display: block;
+    border: 2px solid green;
+    padding: 10px;
+    /* width: 50%; */
+}
+
+nav {
+    /* border: 1px solid green; */
+    position: relative;
+    top: 150px;
+    left: -1000px;
+    transition: left 1s;
+    /* display: none; */
+    
+}
+
+nav.show {
+    /* display: block; */
+    left: 0px;
+    background-color: red;
+    width: 100%;
     
     
 
+}
+
+#faa-bar {
+    display: block;
+    /* margin-left: 200px; */
+    margin-right: 50px;
+}
+
+    
+    
+    
     
 
 
-    nav ul li .nav-element {
+/* yooooooooooooooooooooooo */
+    /* nav ul li .nav-element {
         display: none;
 
-    }
+    } */
 
     .left-content-area, .right-content-area {
         display: none;
@@ -724,6 +772,11 @@ textarea:valid~label {
         /* border: 2px solid red; */
         flex-direction: column;
     }
+    .my-picture-div {
+        justify-content: center;
+        /* border: 2px solid black; */
+        flex: 0.5;
+    }
     .my-picture {
         height: 100px;
         width: 150px;
@@ -754,117 +807,7 @@ textarea:valid~label {
         border: 2px solid black;
     }
 
-    
-
-    /* CONTACT MEDIA QUERY */
-    .contact-content-container{
-        border: 3px solid red;
-        background-color: white;
-    }
-    .contact-form-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: white;
-        /* border: 2px solid red; */
-    }
-    marquee {
-        font-size: xx-large;
-        /* margin-top: 100px; */
-    }
-    .marquee-class{
-        margin-bottom: 20px;
-    }
-    .contact-content-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .submit-btn, .reset-btn{
-        background-color: blue;
-        font-size: small;
-        /* font-weight: bold; */
-        padding: 10px 20px;
-        /* cursor: pointer; */
-        /* margin-bottom: 100px; */
-        border-radius: 10px;
-    }
-    
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-    
-
-    nav ul li .nav-element {
-        display: none;
-
-    }
-
-    .left-content-area, .right-content-area {
-        display: none;
-    }
-    .main-content-area {
-        flex-direction: column;
-    }
-    .bold-text {
-        font-size: 40px;
-        text-align: left;
-    }
-    .small-text {
-        flex-direction: column;
-        font-size: 20px;
-    }
-    
-    .text1 {
-        font-size: medium;
-    }
-    .text2 {
-        font-size: small;
-    }
-    .footer-text {
-        font-size: small;
-    }
-    .main-container {
-        margin: 0px 0px;
-        position: relative;
-        /* border: 3px solid red; */
-    }
-    .btn-container {
-        height: fit-content;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 100px;
-
-    }
-    .btn1 {
-        padding: 5px 30px;
-    }
-    .btn2 {
-        padding: 5px 25px;
-    }
-    .min-container, .footer {
-        margin: 5px 20px;
-        /* border: 3px solid blue; */
-    }
-
-    .bold-text-container {
-        /* border: 2px solid red; */
-        margin: 50px 0px;
-    }
-    .nav-bar {
-        margin-top: 20px;
-    }
-    .footer {
-        margin-top: 20px;
-    }
-   
-    
-     /* ABOUT MEDIA QUIARY */
-     .nav-bar {
-        flex: 0.5;
-    }
+    /* yoooooooooooooooooooooooooooooo */
     .about-content {
         flex-direction: column;
     }
@@ -913,7 +856,44 @@ textarea:valid~label {
 
 
     
+
+    /* CONTACT MEDIA QUERY */
+    .contact-content-container{
+        border: 3px solid red;
+        background-color: white;
+    }
+    .contact-form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        /* border: 2px solid red; */
+    }
+    marquee {
+        font-size: xx-large;
+        /* margin-top: 100px; */
+    }
+    .marquee-class{
+        margin-bottom: 20px;
+    }
+    .contact-content-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .submit-btn, .reset-btn{
+        background-color: blue;
+        font-size: small;
+        /* font-weight: bold; */
+        padding: 10px 20px;
+        /* cursor: pointer; */
+        /* margin-bottom: 100px; */
+        border-radius: 10px;
+    }
+    
 }
+
+
+
 
 
 

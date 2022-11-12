@@ -10,12 +10,18 @@ var options = {
 
 
 //NAV-BARS
-  const navBar = document.querySelector("#faa-bar")
-  navBar.addEventListener("click", toggleIcon)
+    const navBar = document.querySelector("#faa-bar")
+    const nav = document.querySelector("nav")
+    // const icon = document.querySelector(".fa")
+    const navElement = document.querySelectorAll(".nav-elment")
 
-  function toggleIcon(){
+    navBar.addEventListener("click", toggleIcon)
+    navElement.forEach((navElement) => navElement.addEventListener("click", toggleIcon))
+
+    function toggleIcon(){
       navBar.classList.toggle("fa-bars")
       navBar.classList.toggle("fa-times")
+      nav.classList.toggle("show")
   }
 
 
@@ -119,7 +125,7 @@ function sendMsg(e) {
 
    //email for form function
     Email.send({
-     SecureToken : "7867fab-9130-4c5d-97d8-c8c5b01fe036",
+     SecureToken : "63eb4be3-f18c-4976-a0b6-da527abbf599",
      To : 'lanrekelipher67@gmail.com',
      From : email.value,
      Subject : "CONTACT FORM",
