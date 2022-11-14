@@ -26,7 +26,7 @@ html{
     /* left: 0; */
     right: 0;
     background-color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid ;
 }
 .nav-left-space{
     /* border: 2px solid blue; */
@@ -100,7 +100,6 @@ html{
     margin-top: 200px;
     position: relative;
     /* border-top: 1px solid; */
-    /* flex: 1; */
     min-height: 25vh;
     display: flex;
     justify-content: center;
@@ -116,7 +115,6 @@ html{
     position: relative;
     text-decoration: none;
     color: black;
-    /* position: relative; */
     /* border: 2px solid blue; */
     display: inline-block;
     margin-left: 10px;
@@ -150,13 +148,11 @@ html{
 /* HOME STYLE  */
 .home-content-container{
     /* border: 2px solid black; */
-    /* height: 100vh; */
-    /* max-height: 100vh; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 40vh;
 }
 .home-content {
@@ -280,7 +276,7 @@ html{
     height: 200px;
     height: 200px;
     margin-top: 20px;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 .my-skill-div {
     /* border: 1px solid black; */
