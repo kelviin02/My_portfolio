@@ -7,6 +7,10 @@
 html{
     scroll-behavior: smooth;
 }
+.active{
+    /* border: 3px solid red; */
+    border-bottom: 2px solid red;
+}
 .main-container{
     /* border: 3px solid red; */
     display: flex;
@@ -39,6 +43,11 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav,
+ul,
+li{
+    list-style-type: none;
 }
 .nav-ul, .nav-li {
     display: inline-block;
@@ -153,7 +162,7 @@ html{
     flex-direction: column;
     justify-content: center;
     /* margin-top: 50px; */
-    margin-bottom: 40vh;
+    margin-bottom: 20vh;
 }
 .home-content {
     min-height: 80vh;
@@ -277,6 +286,7 @@ html{
     height: 200px;
     margin-top: 20px;
     border-radius: 20px;
+    border: 2px solid black;
 }
 .my-skill-div {
     /* border: 1px solid black; */
