@@ -612,6 +612,7 @@ textarea:valid~label {
         display: none;
     }
     .nav-bar{
+        height: 13vh;
         width: 100%;
         justify-content: space-between;
     }
@@ -857,12 +858,12 @@ textarea:valid~label {
     height: 100%;
 }
 .project-content-left-area{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-right: 20px;
 }
-.project-header-text{
+/* .project-header-text{
     border-bottom: 2px solid;
-}
+} */
 .project-content-right-area{
     border: none;
 }
