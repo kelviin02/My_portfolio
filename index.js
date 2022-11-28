@@ -20,7 +20,7 @@ var options = {
     strings: ['<i>Developer</i> .', 'Programmer.',"Freelancer."],
     typeSpeed: 50,
     backSpeed: 50,
-    backDelay: 2000,
+    // backDelay: 2000,
     loop: true
   };
   
