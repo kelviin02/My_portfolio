@@ -80,7 +80,7 @@ li{
 
 .nav-right-space{
     /* border: 2px solid blue; */
-    flex: 0.5;
+    flex: 0.3;
 
 }
 .min-container{
@@ -99,7 +99,7 @@ li{
 }
 .right-content-area{
     /* border: 2px dotted black; */
-    flex: 0.5;
+    flex: 0.3;
 }
 
 
@@ -239,7 +239,8 @@ li{
 
 /* ABOUT STYLE */
 .about-content-container{
-    /* border: 2px solid black; */
+    border: 2px solid black;
+    background-color: white;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -274,7 +275,9 @@ li{
  }
 .about-element{
     /* border: 2px solid; */
+    /* padding: 5px 20px; */
     margin-top: 50px;
+    /* font-size: 60px; */
  }
 .my-picture-div {
     /* border: 1px solid black; */
@@ -300,6 +303,11 @@ li{
     flex: 0.2;
     display: flex;
     justify-content: center;
+}
+#my-skill {
+    border-bottom: 2px solid;
+    padding: 5px 20px;
+    font-size: 30px;
 }
 .my-skill-meter-div {
     /* border: 1px solid red; */
@@ -329,6 +337,11 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#about-me {
+    font-size: 30px;
+    border-bottom: 2px solid;
+    padding: 5px 20px;
 }
 .about-main-element {
     /* border: 2px solid crimson; */
@@ -387,11 +400,13 @@ progress {
 
 /* PROJECT STYLE  */
 .project-content-container{
-    /* border: 2px solid black; */
+    border: 2px solid black;
+    /* background-color: white; */
     min-height: 100vh;
     /* max-height: 100vh; */
     flex: 3;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* margin-top: 300px; */
@@ -417,12 +432,16 @@ progress {
     margin-bottom: 10px;
 }
 #project-h1 {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 5px 20px;
+    font-size: 40px;
+    border-bottom: 2px solid;
+    /* border-left: 2px solid; */
 }
 .project-main-content-container{
     /* border: 2px solid black; */
     margin-bottom: 50px;
+    margin-top: 50px;
     flex: 3;
     display: flex;
 }
@@ -488,35 +507,76 @@ progress {
 
 /* SERVICE STYLE  */
 .service-content-container{
-    border: 2px solid black;
-    min-height: 100vh;
+    /* border: 2px solid black; */
+    min-height: 150vh;
     /* max-height: 100vh; */
     flex: 3;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* margin-top: 300px; */
     margin-bottom: 40vh;
 }
-
+#service-text{
+    padding: 5px 20px;
+    border-bottom: 2px solid;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
 .service-content {
     /* border: 3px solid black; */
-    height: 80vh;
-    max-height: 80vh;
-    width: 90%;
+    height: 150vh;
+    max-height: 150vh;
+    width: 95%;
     background-color: white;
     display: flex;
+    flex-direction: row;
+}
+.service-content-left-area{
+    border: 2px solid ;
+    flex: 1;
+    display: flex;
+    /* margin-left: 50px; */
     flex-direction: column;
 }
-
-/* .service-content-left-area {
+.service-content-free-area{
+    border: 2px solid goldenrod;
+    flex: 0.05;
+}
+.service-content-right-area{
+    border: 2px solid ;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 50px; */
+}
+.service-content-left-top-area{
+    border: 2px solid  green;
+    flex: 1;
+}
+.service-content-left-bottom-area{
     border: 2px solid red;
+    flex: 1;
+}
+.service-content-left-free-area{
+    flex: 0.05;
+    border: 2px solid blue;
 }
 
-.service-content-left-area {
-    border: 2px solid red;
-} */
 
+.service-content-right-top-area{
+    border: 2px solid  slategrey;
+    flex: 1;
+}
+.service-content-right-free-area{
+    /* border: 2px solid red; */
+    flex: 0.05;
+}
+.service-content-right-bottom-area{
+    border: 2px solid darkred;
+    flex: 1;
+}
 
 
 
@@ -531,10 +591,11 @@ progress {
 
 /* CONTACT STYLE  */
 .contact-content-container{
-    /* border: 2px solid black; */
-    height: 100vh;
-    max-height: 100vh;
-    min-height: 100vh;
+    border: 2px solid black;
+    background-color: white;
+    height: 80vh;
+    max-height: 90vh;
+    min-height: 80vh;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -544,12 +605,12 @@ progress {
 }
 .contact-content{
     /* border: 2px solid black; */
-    height: 80vh;
-    max-height: 80vh;
-    width: 90%;
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 90%;
     background-color: white;
     /* width: 70%; */
-    max-width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -810,6 +871,12 @@ textarea:valid~label {
         flex-direction: column;
         margin-top: 50px;
     }
+    #my-skill {
+        border-bottom: 2px solid;
+        padding: 5px 20px;
+        font-size: 30px;
+        /* font-size: 40px; */
+    }
     .my-skill-meter-div {
         /* width: 50%; */
         flex-direction: column;
@@ -896,6 +963,13 @@ textarea:valid~label {
     /* min-height: max-content; */
     min-height: 100vh;
 }
+#project-h1 {
+    /* border: 2px solid black; */
+    border-bottom: 2px solid;
+    padding: 5px 20px;
+    font-size: 40px;
+}
+
 #portfolio-image{
     width: 100%;
     height: 100%;
@@ -913,6 +987,21 @@ textarea:valid~label {
     margin-top: 50px;
     margin-left: 20px;
 }
+
+
+
+
+
+
+
+
+
+/* SERVICE STYLE */
+.service-content{
+    flex-direction: column;
+}
+
+
 
 
 
@@ -938,7 +1027,7 @@ marquee {
 .form-btns{
     /* border: 3px solid black; */
     margin-top: 50px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }
 .submit-btn, .reset-btn{
     background-color: blue;
