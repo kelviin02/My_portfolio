@@ -39,3 +39,39 @@ const sec = document.querySelectorAll("section")
    }
 activeMenu()
    window.addEventListener("scroll", activeMenu)
+
+
+
+
+
+
+
+
+
+
+// function myfunction() {
+//     var navBar = document.querySelector("nav")
+//     navBar.classList.toggle('show')
+// }
+
+
+
+
+
+
+
+
+   
+   const nav = document.querySelector("nav")
+   const icon = document.querySelector("#faa-bar")
+   const links = document.querySelectorAll(".nav-element")
+   
+   
+   icon.addEventListener("click", toggleMobile)
+   links.forEach((link) => link.addEventListener("click", toggleMobile))
+
+   function toggleMobile()  {
+       icon.classList.toggle("fa-bars")
+       icon.classList.toggle("fa-times")
+       nav.classList.toggle("show")
+   }
