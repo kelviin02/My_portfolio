@@ -1,17 +1,16 @@
 //BACK TO TOP ARROW
-const topIcon = document.querySelector('.to-top')
-window.addEventListener('scroll', showIcon)
+ const topIcon = document.querySelector('.to-top')
+ window.addEventListener('scroll', showIcon)
+ topIcon.addEventListener('click', toTop)
 
-topIcon.addEventListener('click', toTop)
-
-function showIcon() {
+ function showIcon() {
     if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
         topIcon.style.display = "block"
     } else {
         topIcon.style.display = "none"
     }
 }
-function toTop() {
+ function toTop() {
     document.documentElement.scrollTop = 0
 }
 
@@ -22,14 +21,14 @@ var options = {
     backSpeed: 50,
     // backDelay: 2000,
     loop: true
-  };
+};
   
 var typed = new Typed('#auto-type', options);
 
 
 //NAV ON ACTIVE
-const li = document.querySelectorAll(".nav-li")
-const sec = document.querySelectorAll("section")
+ const li = document.querySelectorAll(".nav-li")
+ const sec = document.querySelectorAll("section")
 
    function activeMenu() {
     let len = sec.length
@@ -37,34 +36,16 @@ const sec = document.querySelectorAll("section")
     li.forEach(ltx => ltx.classList.remove("active"))
     li[len].classList.add("active")
    }
-activeMenu()
+ activeMenu()
    window.addEventListener("scroll", activeMenu)
 
 
 
 
-
-
-
-
-
-
-// function myfunction() {
-//     var navBar = document.querySelector("nav")
-//     navBar.classList.toggle('show')
-// }
-
-
-
-
-
-
-
-
-   
-   const nav = document.querySelector("nav")
-   const icon = document.querySelector("#faa-bar")
-   const links = document.querySelectorAll(".nav-element")
+//MOBILE NAVBAR    
+ const nav = document.querySelector("nav")
+ const icon = document.querySelector(".fa-bars")
+ const links = document.querySelectorAll(".nav-element")
    
    
    icon.addEventListener("click", toggleMobile)
