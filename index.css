@@ -39,7 +39,7 @@ html{
     
 }
 .nav-content-space{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex: 3;
     /* display: inline-block; */
     display: flex;
