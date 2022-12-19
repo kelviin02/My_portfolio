@@ -587,6 +587,7 @@ progress {
     /* border: 2px solid red; */
     flex: 1;
     text-align: justify;
+    border-top: 2px solid black;
 }
 #briefcase{
     color: white;
